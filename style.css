@@ -24,7 +24,7 @@ body{
     margin-left: 10px;
   }
   h3{
-    font-size: 15px;
+    font-size: 14px;
   }
   p{
     font-size: 14px;
@@ -275,34 +275,45 @@ aside i{
 }
 /*Activité*/
 .card{
-  border: 2px solid black;
-  margin-bottom: 37px;
+  border-radius: 22px;
+  border: 2px solid #F2F2F2;
+  margin-bottom: 55px;
 }
 .card img{
-  width: 256px;
+  width: 290px;
   height: 119px;
+  border-radius: 20px 20px 0 0;
+}
+.card h3{
+  padding-left: 10px;
 }
 #activite{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
-.card .img1{
-  height: 326px;
 }
 .colonne_marseille{
   padding-left: 10px;
 }
+.album_card{
+  margin-bottom: 53px;
+}
+.card .img1{
+  height: 361px;
+  object-fit: none;
+}
+.card .img2{
+  height: 142px;
+}
 .card .img3{
-  height: 102px;
+  height: 107px;
   object-position: top;
 }
 .card .img4{
-  height: 106px;
-object-position: top
+  height: 117px;
+  object-position: top
 }
 .card .img5{
-  height: 128px;
+  height: 135px;
   object-position: top;
 }
 
@@ -331,11 +342,7 @@ footer{
     text-decoration: none;
     color: black;
   }
-  @media (max-width: 1250px){}
-
-
-
-  @media (max-width: 1024px){
+   @media (max-width: 1224px){
       
     /*Filtres*/
     .filtre{ 
@@ -363,9 +370,28 @@ footer{
       height: 197px;
       width: 300px;
     }
+    #activite{
+      display: flex;
+      justify-content: space-evenly;
     }
-
-    @media (max-width: 676px){
+    .colonne_marseille{
+      padding-left: 0px;
+    }
+    
+    .card-image img,
+      .card .img1,
+      .card .img2,
+      .card .img3,
+      .card .img4,
+      .card .img5{
+        width: 100%;
+      }
+    .card-footer{
+      margin-left: 25px;
+     }
+     
+          }    
+      @media (max-width: 758px){
       body{
         margin-left: 0;
         margin-right: 0;
@@ -448,23 +474,30 @@ footer{
       }
       
       #hebergement img,
+      #activite img,
       .card-image,
       .card-image img,
-      .card .img1{
+      .card .img1,
+      .card .img2,
+      .card .img3,
+      .card .img4,
+      .card .img5{
         width: 100%;
       }
-      
-     /* .card .img1,
-      .card1 .img3,
-      .card2 .img5{
-        height: 168px;
+      #activite{
+        display: flex;
+        flex-direction: column;
+      }
+      #activite img{
+        height: 153px;
+        width: 100%;
         object-fit: cover;
-       }
-      #populaire .card-image{
-        margin-left: 10px;
-        width: 98%;
-      }*/
-      footer{
+        object-position: center;
+      }
+      .colonne_marseille{
+        padding-left: 0px;
+      }
+     footer{
         display: flex;
         flex-direction: column;
         margin-right: 5px;
