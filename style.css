@@ -15,7 +15,7 @@ body{
     object-fit: cover;
   }
   h1{
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 15px;
     margin-bottom: 4px;
   }
@@ -24,19 +24,21 @@ body{
     margin-left: 10px;
   }
   h3{
-    font-size: 14px;
+    font-size: 16px;
   }
   p{
-    font-size: 14px;
+    font-size: 16px;
   }
   li{
     list-style: none;  
   }
   .Icon-star{
     color: #0065fc;
+    font-size: 9px;
   }
   .Icon-starColor{
     color: #F2F2F2;
+    font-size: 9px;
   }
   .card-text{
     padding-left: 12px;
@@ -148,7 +150,7 @@ body{
 .box-filtre{
   display: flex;
   margin-left: 20px;
-  padding-right: 30px;
+  padding-right: 21px;
   margin-bottom: 4px;
   border: 2px solid #F2F2F2;
   border-radius: 29px;
@@ -178,7 +180,6 @@ body{
 .box-filtre .text p{
   margin-top: 13px;
   margin-left: 18px;
-  padding-left: 15px;
   font-weight: bold;
 }
   /*Information*/
@@ -203,7 +204,7 @@ body{
   padding-top: 5px;
 }
 .info p{
-  padding-left: 18px; 
+  padding-left: 12px; 
  }
 
 /*section hébergement*/
@@ -211,8 +212,8 @@ section{
     display: flex;
 }
 section h3{
-  margin-top: 50px;
-  margin-left: 37px;
+  margin-top: 33px;
+  margin-left: 36px;
 }
 .article{
   padding-right: 12px;
@@ -221,6 +222,10 @@ section h3{
 .article, aside{
   background-color: #F2F2F2;
   border-radius: 20px;
+}
+aside h2,
+.article h2{
+  margin-top: 25px;
 }
 .album{
   margin-top: 50px;
@@ -256,7 +261,7 @@ aside{
 }
 aside i{
   float: right;
-  padding-right: 12px;
+  padding-right: 32px;
 }
 #populaire{
   margin-right: 34px;
@@ -267,20 +272,21 @@ aside i{
 }
 #populaire .card-image{
   display: flex;
-  margin-left: 14px;
+  margin-left: 18px;
+  padding-right: 4px;
   border-radius: 20px;
   background-color: white;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 #populaire .card-image img{
-  width: 121px;
-  height: 146px; 
+  width: 110px;
+  height: 106px; 
   margin-top: 3px;
   margin-left: 4px;
   border-radius: 17px 0 0 17px;
 }
 #populaire .Icon-star{
-  margin-top: 50px;
+  margin-top: 13px;
 }
 /*Activité*/
 #activite .card{
@@ -290,7 +296,7 @@ aside i{
 .card{
   border-radius: 22px;
   border: 2px solid #F2F2F2;
-  margin-bottom: 60px;
+  margin-bottom: 39px;
 }
 .card img{
   width: 287px;
@@ -305,20 +311,20 @@ aside i{
   flex-wrap: wrap;
 }
 .colonne_marseille{
-  padding-left: 10px;
+  padding-left: 12px;
 }
 .album_card{
-  margin-bottom: 56px;
+  margin-bottom: 49px;
 }
 .card .img1{
   height: 361px;
   object-fit: none;
 }
 .card .img2{
-  height: 142px;
+  height: 134px;
 }
 .card .img3{
-  height: 107px;
+  height: 128px;
   object-position: top;
 }
 .card .img4{
@@ -400,7 +406,7 @@ footer{
         width: 100%;
       }
     .card-footer{
-      margin-left: 25px;
+      margin-left: 44px;
      }
      
           }    
@@ -497,6 +503,9 @@ footer{
       .card .img4,
       .card .img5{
         width: 100%;
+      }
+      section h3{
+        margin-left: 20px;
       }
       #activite{
         display: flex;
