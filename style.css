@@ -132,6 +132,11 @@ body{
   font-size: 15px;
   margin-top: 13px;
 }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 9px;
+}
 .box{
   display: flex;
   padding-right: 13px;
@@ -143,7 +148,8 @@ body{
 .box-filtre{
   display: flex;
   margin-left: 20px;
-  padding-right: 52px;
+  padding-right: 30px;
+  margin-bottom: 4px;
   border: 2px solid #F2F2F2;
   border-radius: 29px;
   height: 39px;
@@ -165,12 +171,15 @@ body{
 .filtre_icone i{
   display: flex;
   justify-content: center;
-  margin-top: 13px;
+  margin-top: 12px;
+  padding-right: 3px;
   color: #0065fc;
 }
-.text p{
+.box-filtre .text p{
   margin-top: 13px;
   margin-left: 18px;
+  padding-left: 15px;
+  font-weight: bold;
 }
   /*Information*/
 .info{
@@ -250,7 +259,7 @@ aside i{
   padding-right: 12px;
 }
 #populaire{
-  margin-right: 10px;
+  margin-right: 34px;
   margin-top: 38px;
 }
 #populaire h3{
@@ -258,7 +267,7 @@ aside i{
 }
 #populaire .card-image{
   display: flex;
-  margin-left: 5px;
+  margin-left: 14px;
   border-radius: 20px;
   background-color: white;
   margin-bottom: 28px;
@@ -274,13 +283,17 @@ aside i{
   margin-top: 50px;
 }
 /*Activité*/
+#activite .card{
+  box-shadow: 2px 2px 11px 3px #F2F2F2;
+}
+
 .card{
   border-radius: 22px;
   border: 2px solid #F2F2F2;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 .card img{
-  width: 290px;
+  width: 287px;
   height: 119px;
   border-radius: 20px 20px 0 0;
 }
@@ -295,7 +308,7 @@ aside i{
   padding-left: 10px;
 }
 .album_card{
-  margin-bottom: 53px;
+  margin-bottom: 56px;
 }
 .card .img1{
   height: 361px;
@@ -460,13 +473,14 @@ footer{
         padding-left: 17px;
       }
       .box-filtre{
-        margin-left: 0;
-        margin-top: 10px;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-bottom: 4px;
+        padding-right: 12px;
+        margin-left: 0px;
+        margin-right: 4px;
       }
       .filtre{
         margin-top: 10px;
+        
       }
       .box_icone{
         display: flex;
