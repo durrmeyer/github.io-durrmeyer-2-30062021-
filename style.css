@@ -215,8 +215,9 @@ section{
     display: flex;
 }
 section h3{
-      margin-top: 33px;
-      margin-left: 36px;
+      margin-top: 61px;
+      margin-left: 20px;
+      font-size: 20px;
     }
 .article{
       padding-right: 12px;
@@ -291,8 +292,11 @@ aside i{
       border-radius: 17px 0 0 17px;
     }
 #populaire .Icon-star{
-      margin-top: 64px;
+      margin-top: 0;
     }
+.stars{
+      margin-top: 54px;
+}    
 
 
 /*Activité*/
@@ -310,7 +314,7 @@ aside i{
     }
 .colonne_marseille img{
       width: 300px; 
-      height: 385px;
+      height: 391px;
       border-radius: 20px 20px 0 0;
       object-fit: cover;
     }
@@ -389,8 +393,11 @@ footer{
       width: 158px;
       height: 185px;
       }
+      #hebergement img{
+      width: 360px;
+      }
     }
-@media (max-width: 1245px){
+@media (max-width: 1500px){
       
     /*Filtres*/
 .filtre{ 
@@ -532,17 +539,22 @@ nav li a{
 #hebergement img, #activite img, .card-image, .card-image img, 
 .card .img1, .card .img2,.card .img3,.card .img4, .card .img5{
       width: 100%;
-      height: auto;
       }
 section h3{
       margin-left: 20px;
       }
 #activite{
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
+      }
+#populaire h3{
+      font-size: 12px;
+      }
+.card-text p{
+      font-size: 13px;
       }  
 .stars{
-        height: 0;
+      height: 0;
       }
 
 footer{
