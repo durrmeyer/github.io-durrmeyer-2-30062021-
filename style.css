@@ -90,26 +90,29 @@ nav li a{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      padding-bottom: 21px;
     }
 .form_icone{
       background-color: #f2f2f2;
       border-radius:  10px 0 0 10px;
-      width: 27px;
-      height: 38px;
+      width: 32px;
+      height: 49px;
       padding-left: 16px;
     }
 .form_icone i{
-      padding-top: 11px;
+      padding-top: 15px;
+      font-size: 19px;              
     }
 input.search{
-      font-size: 16px;
+      font-size: 20px;
+      color: black;
       font-weight: 900;
       border: 1px solid #f2f2f2;
       padding-left: 10px;
       padding-right: 0px;
     }
 button{
-      font-weight: bold;
+      font-size: 16px;
       border-radius: 0 10px 10px 0;
       padding-right: 20px;
       padding-left: 14px;
@@ -185,6 +188,7 @@ button{
 .info{
       display: flex;
       margin-top: 20px;
+      margin-bottom: 15px;
     }
 .info i{
       padding-left: 11px;
@@ -255,7 +259,7 @@ aside h2, .article h2{
     }
 aside{
       margin-left: 10px;
-      width: 32%;
+      width: 35%;
     }
 aside i{
       float: right;
@@ -287,7 +291,7 @@ aside i{
       border-radius: 17px 0 0 17px;
     }
 #populaire .Icon-star{
-      margin-top: 70px;
+      margin-top: 64px;
     }
 
 
@@ -296,7 +300,8 @@ aside i{
       display: flex;
       flex-direction: row;
       width: 100%;
-      margin-top: 20px;
+      margin-top: 28px;
+      margin-bottom: 15px;
       justify-content: space-around;
     }
 .card{
@@ -311,8 +316,8 @@ aside i{
     }
 #activite h3{
       margin-left: 12px;
-      padding-bottom: 10px;
-    }
+      padding-bottom: 16px;
+}  
 .card {
       margin-bottom: 56px;
     }
@@ -357,7 +362,7 @@ footer{
       margin-right: 6px;
     }
 .card-footer{
-      margin-left: 15px;
+      margin-left: 34px;
       padding-right: 15px;
       width: 100%;
       flex:1;
@@ -379,7 +384,7 @@ footer{
 
 
   /* MEDIA QUERIES*/
- @media (max-width: 1750px){       
+@media (max-width: 1750px){       
 #populaire .card-image img {
       width: 158px;
       height: 185px;
@@ -414,7 +419,7 @@ section{
       flex-direction: row;
       }
 #activite .card img{
-      width: 217px;
+      width: 232px;
       }
 .img1{
       width: 232px;
@@ -424,17 +429,22 @@ section{
       }
     }  
 @media (max-width:1024px){
+
 #activite{
   display: flex;
   flex-direction: column;
       }
 #activite .card img {
       width: 100%;
-      height: 279px;
+      height: 278px;
+      object-position: center;
       } 
 .colonne_marseille img{
       height: 385px;
-      }       
+      }  
+#populaire .Icon-star {
+      margin-top: 35px;
+      }           
     }  
 @media (max-width: 900px){
 body{
@@ -454,6 +464,29 @@ header{
       }
 .logo{
       margin-top: 1px;
+      }
+button{
+      display: none;
+      }
+.button{
+      display: flex;
+      border-radius: 15px 15px 15px 15px;
+      background-color: blue;
+      color: white;
+      margin-left: -43px;
+      height: 52px;
+      width: 53px;
+      }
+.button .icone{
+      padding-left: 33px;
+      margin-left: -15px;
+      padding-top: 15px;
+      font-size: 20px;
+      }
+form .search{
+      width: 54%;
+      padding-left: 17px;
+      padding-right: 46px;
       }
 nav ul{
       display: flex;
@@ -482,25 +515,7 @@ nav li a{
       display: flex;
       justify-content: center;
       }
-button{
-      display: none;
-      }
-button{
-      display: flex;
-      border-radius: 15px 15px 15px 15px;
-      background-color: blue;
-      padding-left: 12px;
-      padding-right: 12px;
-      margin-left: -8px;
-      color: white;
-      }
-.button .icone{
-      padding-top: 12px;
-      }
-form .search{
-      width: 50%;
-      padding-left: 17px;
-      }
+
 .box-filtre{
       margin-bottom: 4px;
       padding-right: 12px;
@@ -517,6 +532,7 @@ form .search{
 #hebergement img, #activite img, .card-image, .card-image img, 
 .card .img1, .card .img2,.card .img3,.card .img4, .card .img5{
       width: 100%;
+      height: auto;
       }
 section h3{
       margin-left: 20px;
@@ -525,6 +541,10 @@ section h3{
         display: flex;
         flex-direction: column;
       }  
+.stars{
+        height: 0;
+      }
+
 footer{
       display: flex;
       flex-direction: column;
