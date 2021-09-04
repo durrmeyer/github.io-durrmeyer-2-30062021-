@@ -388,15 +388,7 @@ footer{
 
 
   /* MEDIA QUERIES*/
-@media (max-width: 1750px){       
-#populaire .card-image img {
-      width: 158px;
-      height: 185px;
-      }
-      #hebergement img{
-      width: 360px;
-      }
-    }
+
 @media (max-width: 1500px){
       
     /*Filtres*/
